@@ -1,1 +1,13 @@
+/* Importing Inria Serif Font */
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+/* -------------------------- */
+/*          Reset             */
+/* -------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
