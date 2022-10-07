@@ -1,6 +1,13 @@
 /* Importing Inria Serif Font */
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
 
+:root {
+  --black: #362a2a;
+  --orange: #fa7436;
+  --white: #f6f6f6;
+  --gray: #949494;
+}
+
 /* -------------------------- */
 /*          Reset             */
 /* -------------------------- */
@@ -10,4 +17,41 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* ----------------------------- */
+/*            body               */
+/* ----------------------------- */
+body {
+  font-family: sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+  padding: 0 8rem;
+}
+
+/* ---------------------------- */
+/*            header            */
+/* ---------------------------- */
+#header {
+  display: flex;
+  gap: 50px;
+  padding: 2.5rem 0;
+}
+#nav-bar ul {
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style-type: none;
+  display: flex;
+  gap: 80px;
+}
+
+/* -------------------- */
+/*        General       */
+/* -------------------- */
+hr {
+  width: 100vw;
+  height: 1px;
+  margin-left: -8rem;
+  background-color: #dadada;
+  border: none;
 }
