@@ -53,6 +53,7 @@ body {
 /* ---------------------------- */
 section#hero {
   width: calc(100vw - var(--space-from-left));
+  padding: 2rem 0;
   padding-left: var(--space-from-left);
   display: flex;
   justify-content: space-between;
@@ -119,6 +120,8 @@ section#hero {
   padding-left: var(--space-from-left);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 120px;
 }
 .card {
   width: 160px;
@@ -128,11 +131,13 @@ section#hero {
   border: 1px solid #cecece;
   border-radius: 8px;
 }
+/* image of card */
 .card img {
   width: 200px;
   margin-left: -30px;
   margin-top: -100px;
 }
+/* information container */
 .card .info {
   margin-top: -15px;
   padding: 0 20px;
@@ -140,14 +145,17 @@ section#hero {
   justify-content: space-between;
   align-items: center;
 }
+/* title of product */
 .card .title {
   font-size: 0.8rem;
   width: 60px;
 }
+/* price of product */
 .card .price {
   font-size: 0.8rem;
   font-weight: bold;
 }
+/* add to cart button */
 .card button {
   background-color: var(--black);
   color: var(--white);
@@ -158,6 +166,10 @@ section#hero {
   position: relative;
   left: 140px;
 }
+/* --------------------------- */
+/*    end showcase section     */
+/* --------------------------- */
+
 /* -------------------- */
 /*        General       */
 /* -------------------- */
