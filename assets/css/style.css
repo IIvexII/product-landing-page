@@ -33,9 +33,10 @@ body {
 /*            header            */
 /* ---------------------------- */
 #header {
-  display: flex;
-  gap: 50px;
   padding: 2.5rem 0;
+  display: flex;
+  gap: 120px;
+  align-items: center;
 }
 #nav-bar ul {
   font-weight: bold;
@@ -54,4 +55,8 @@ hr {
   margin-left: -8rem;
   background-color: #dadada;
   border: none;
+}
+a {
+  color: var(--black);
+  text-decoration: none;
 }
