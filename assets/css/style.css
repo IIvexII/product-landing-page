@@ -5,7 +5,8 @@
   --black: #362a2a;
   --orange: #fa7436;
   --white: #f6f6f6;
-  --gray: #949494;
+  --gray: #757575;
+  --space-from-left: 8rem;
 }
 
 /* -------------------------- */
@@ -26,14 +27,14 @@ body {
   font-family: sans-serif;
   color: var(--black);
   background-color: var(--white);
-  padding: 0 8rem;
+  overflow-x: hidden;
 }
 
 /* ---------------------------- */
 /*            header            */
 /* ---------------------------- */
 #header {
-  padding: 2.5rem 0;
+  padding: 2.5rem var(--space-from-left);
   display: flex;
   gap: 120px;
   align-items: center;
@@ -46,13 +47,43 @@ body {
   gap: 80px;
 }
 
+/* ---------------------------- */
+/*        hero section          */
+/* ---------------------------- */
+section#hero {
+  width: calc(100vw - var(--space-from-left));
+  padding-left: var(--space-from-left);
+  display: flex;
+  justify-content: space-between;
+}
+#hero-text {
+  width: 400px;
+  padding-top: 50px;
+}
+#hero-text #brand-name {
+  font-size: 4rem;
+}
+#hero-text #shoe-name {
+  font-size: 6.5rem;
+  font-weight: 100;
+  color: var(--orange);
+}
+#hero-text p {
+  padding-top: 20px;
+  line-height: 1.8;
+  color: var(--gray);
+  text-align: justify;
+}
+#hero-img {
+  height: 80vh;
+}
+
 /* -------------------- */
 /*        General       */
 /* -------------------- */
 hr {
   width: 100vw;
   height: 1px;
-  margin-left: -8rem;
   background-color: #dadada;
   border: none;
 }
