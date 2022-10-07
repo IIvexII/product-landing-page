@@ -6,6 +6,7 @@
   --orange: #fa7436;
   --white: #f6f6f6;
   --gray: #757575;
+  --light-gray: #e3e3e3;
   --space-from-left: 8rem;
 }
 
@@ -99,17 +100,71 @@ section#hero {
   border: 1px solid var(--gray);
   border-radius: 50px;
 }
+#hero-text #buy button:hover {
+  box-shadow: 2px 3px 2px var(--light-gray);
+}
 #hero-img {
   height: 80vh;
 }
 
+/* ---------------------------- */
+/*       end hero section       */
+/* ---------------------------- */
+
+/* --------------------------- */
+/*      showcase section       */
+/* --------------------------- */
+#showcase {
+  padding: 8rem var(--space-from-left);
+  padding-left: var(--space-from-left);
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 160px;
+  height: 100px;
+  min-width: 150px;
+  box-shadow: 10px 10px 10px var(--light-gray);
+  border: 1px solid #cecece;
+  border-radius: 8px;
+}
+.card img {
+  width: 200px;
+  margin-left: -30px;
+  margin-top: -100px;
+}
+.card .info {
+  margin-top: -15px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .title {
+  font-size: 0.8rem;
+  width: 60px;
+}
+.card .price {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.card button {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.6rem;
+  padding: 0 5px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  left: 140px;
+}
 /* -------------------- */
 /*        General       */
 /* -------------------- */
 hr {
   width: 100vw;
   height: 1px;
-  background-color: #dadada;
+  background-color: var(--light-gray);
   border: none;
 }
 a {
